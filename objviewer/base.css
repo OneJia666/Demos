@@ -1,0 +1,134 @@
+body 
+{
+	font-family: Monospace;
+	font-weight: bold;
+	background-color: #ccccff;
+	margin: 0px;
+	overflow: hidden;
+}
+
+#logo {
+    position:absolute;
+    left:10px;
+    top:10px;
+}
+
+img#loading {
+    position: absolute;
+    width:64px;
+    height:64px;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+    display:none;
+}
+
+#info, #music, #ani, #reset, #qr {
+    left:50%;
+    top:50%;
+}
+/*
+#info {
+    margin-left:-64px;
+    margin-top:-16px;
+}
+
+#music {
+    margin-left:-16px;
+    margin-top:-64px;
+}
+
+#ani {
+    margin-left:32px;
+    margin-top:-16px;
+}
+
+#reset {
+    margin-left:-16px;
+    margin-top:32px;
+}
+
+#fullscreen {
+    margin-left:-86px;
+    margin-top:-64px;
+}*/
+
+#info {
+    margin-left:-16px;
+    margin-top:-64px;
+}
+
+#music {
+    margin-left:30px;
+    margin-top:-31px;
+}
+
+#ani {
+    margin-left:12px;
+    margin-top:23px;
+}
+
+#reset {
+    margin-left:-44px;
+    margin-top:23px;
+}
+
+#qr {
+    margin-left:-62px;
+    margin-top:-31px;
+}
+			.qr-ui {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display:none;
+}
+.qr-background {
+    background-color: rgba(0,0,0,0.6);
+}
+
+#qr-title {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 20px;
+    text-align: center;
+    color: rgb(237, 145, 105);
+    letter-spacing: 2pt;
+    font-size:12pt;
+}
+
+#qr-content {
+    position: absolute;
+    left:0px;
+    top:25%;
+    right:0px;
+    bottom:0px;
+    line-height: 20pt;
+    font-size: 9pt;
+    color: rgb(245, 189, 103);
+    letter-spacing: 1pt;
+    overflow: auto;
+	text-align:center;
+}
+#qr-content pre {
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+#qr-back {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left:-16px;
+    cursor: pointer;
+    filter:brightness(2);
+    -moz-filter:brightness(2);
+    -webkit-filter:brightness(2);
+    -o-filter:brightness(2);
+}

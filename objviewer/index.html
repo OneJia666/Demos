@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>鸡缸杯</title>
+	<meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+	<link rel=stylesheet href="base.css"/>
+	<link rel=stylesheet href="model.css"/>
+	<link rel=stylesheet href="index.css"/>
+</head>
+<body>
+	<div id="page" class="blurNeeded">
+		<div id="ThreeJS"></div>
+		<img id='loading' src='image/loading.gif' />
+		<img src='image/btn-menu.png' class="button menuClose" id='menu' />
+		<div id="options" class='optionsInit'>
+			<img src='image/btn-info.png' class="button" id='info' />
+			<img src='image/btn-music-off.png' src-on='image/btn-music-on.png' src-off='image/btn-music-off.png' class="button" id='music' />
+			<img src='image/btn-ani-play.png' src-play='image/btn-ani-play.png' src-pause='image/btn-ani-pause.png' class="button" id='ani' />
+			<img src='image/btn-reset.png' class="button" id='reset' />
+			<img src='image/btn-qr.png' src-fs='image/btn-qr.png' src-ns='image/btn-qr.png' class="button" id='qr' />
+		</div>
+	</div>
+
+	<div class="info-ui info-background"></div>
+	<div class="info-ui info-container">
+		<div id="info-title">鸡缸杯</div>
+		<div id="info-content">
+			<pre></pre>
+		</div>
+		<img src='image/btn-back.png' id='info-back' />
+	</div>
+
+	<div class="qr-ui qr-background"></div>
+	<div class="qr-ui qr-container">
+		<img src='image/btn-back.png' id='qr-back' />
+	</div>
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/three62.min.js"></script>
+	<script src="js/Detector.js"></script>
+	<script src="js/MTLLoader.min.js"></script>
+	<script src="js/OBJMTLLoader.min.js"></script>
+	<script type="text/javascript" src="js/OrbitControls.min.js"></script>
+	<script src="js/howler.min.js"></script>
+	<script src="js/lz-string.js"></script>
+	<script>
+		var music_urls=['media/KissTheRain.mp3', 'media/KissTheRain.ogg'];
+		var baseUrl='../';
+		var model=baseUrl+"models/id118";
+		var model_ltintensity=2.1;
+		var model_env_refl_rate=11;
+		var model_cam_vmax_deg=180;
+		var model_option_cal_normal=true;
+		var model_option_fix_refl=true;
+		var model_compress='lzs-base64';
+		var model_lights=false;
+		var model_x="0";
+		var model_y="1.5";
+		var model_z="2.6";
+		var model_ex3=1;
+	</script>
+	<script src="js/main.min.js"></script>
+</body>
+</html>
